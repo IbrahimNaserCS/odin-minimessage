@@ -1,0 +1,10 @@
+<html>
+  <body>
+    <ul>
+        <% messages.map((message) => { %>
+          <li><%= message.text %> <%= message.user %> <%= message.added %></li>
+        <% }) %>
+      </ul>
+      <a href="/new">Add New</a>
+  </body>
+</html>
